@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/hu.bme.mit.socialnetwork/src" modelPluginID="hu.bme.mit.socialnetwork"
+    modelName="My" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>My.ecore</foreignModel>
+  <genPackages prefix="SocialNetworkPackage" disposableProviderFactory="true" ecorePackage="My.ecore#/">
+    <genClasses ecoreClass="My.ecore#//SocialNetwork">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//SocialNetwork/people"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//SocialNetwork/movies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//SocialNetwork/likes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//SocialNetwork/awards"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//SocialNetwork/characters"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Person">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Person/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Person/posts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Person/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Person/likes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Person/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Person/gender"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="My.ecore#//Post"/>
+    <genClasses ecoreClass="My.ecore#//Actor">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Actor/awards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Actor/artistName"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Movie">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Movie/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Movie/genre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Movie/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Movie/awards"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Movie/characters"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Character">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Character/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Character/actor"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Award">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Award/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Award/chategory"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Like">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute My.ecore#//Like/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//Like/movie"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

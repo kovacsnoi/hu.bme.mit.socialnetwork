@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hu.bme.mit.socialnetwork:SocialNetwork xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hu.bme.mit.socialnetwork="hu.bme.mit.socialnetwork">
+  <people name="Morgan Porterfield Freeman Sr." age="-1" gender="male"/>
+  <people name="Mayme Edna Revere" age="-1" gender="female"/>
+  <people xsi:type="hu.bme.mit.socialnetwork:Actor" parent="//@people.1 //@people.0" name="Morgan Freeman" age="86" gender="male" awards="//@awards.0 //@awards.1" artistName="undefined"/>
+  <people name="John Doe" likes="//@likes.0" age="34" gender="male"/>
+  <people xsi:type="hu.bme.mit.socialnetwork:Actor" parent="//@people.5 //@people.6" name="Leonardo DiCaprio" age="49" gender="male" awards="//@awards.2" artistName="DiCaprio"/>
+  <people name="Irmelin Indenbirken" likes="//@likes.2" age="-1" gender="female"/>
+  <people name="George DiCaprio" likes="//@likes.1" age="-1" gender="male"/>
+  <movies title="The Shawshank Redemption" genre="drama" date="1994" characters="//@characters.0"/>
+  <movies title="The Revenant" genre="western/action" date="2015" characters="//@characters.1"/>
+  <movies title="Titanic" genre="romance/drama" date="1997" awards="//@awards.3" characters="//@characters.2"/>
+  <likes date="2024" movie="//@movies.0"/>
+  <likes date="2000" movie="//@movies.2"/>
+  <likes date="2020" movie="//@movies.1"/>
+  <awards name="Academy Award (Oscar)" chategory="Best Supporting Actor"/>
+  <awards name="Golden Globe Award" chategory="Best Supporting Actor &#x2013; Motion Picture"/>
+  <awards name="Academy Award (Oscar)" chategory="Best Actor in a Leading Role"/>
+  <awards name="Academy Award (Oscar)" chategory="Best Picture"/>
+  <characters name="Ellis Boyd &quot;Red&quot; Redding" actor="//@people.2"/>
+  <characters name="Hugh Glass" actor="//@people.4"/>
+  <characters name="Jack Dawson" actor="//@people.4"/>
+</hu.bme.mit.socialnetwork:SocialNetwork>
